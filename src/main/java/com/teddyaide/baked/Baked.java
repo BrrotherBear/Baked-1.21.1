@@ -1,5 +1,6 @@
 package com.teddyaide.baked;
 
+import com.teddyaide.baked.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -12,6 +13,6 @@ public class Baked implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-
+		ModItems.registerBakedItems();
 	}
 }
