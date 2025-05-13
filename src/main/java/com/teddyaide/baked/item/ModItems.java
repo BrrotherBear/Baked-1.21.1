@@ -14,6 +14,9 @@ public class ModItems {
     public static final Item LARGE_EMPTY_VILE = registerItem("large_empty_vile", new Item(new Item.Settings()));
     public static final Item YEAST_VILE = registerItem("yeast_vile", new Item(new Item.Settings()));
     public static final Item LARGE_YEAST_VILE = registerItem("large_yeast_vile", new Item(new Item.Settings()));
+    public static final Item STRAW = registerItem("straw", new Item(new Item.Settings()));
+
+
 
 
     private static Item registerItem(String name, Item item) {
@@ -28,6 +31,7 @@ public class ModItems {
             fabricItemGroupEntries.add(LARGE_EMPTY_VILE);
             fabricItemGroupEntries.add(YEAST_VILE);
             fabricItemGroupEntries.add(LARGE_YEAST_VILE);
+            fabricItemGroupEntries.add(STRAW);
         });
 
 
