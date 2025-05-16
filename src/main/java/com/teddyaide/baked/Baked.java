@@ -1,5 +1,6 @@
 package com.teddyaide.baked;
 
+import com.teddyaide.baked.block.ModBlocks;
 import com.teddyaide.baked.item.ModItemGroups;
 import com.teddyaide.baked.item.ModItems;
 import net.fabricmc.api.ModInitializer;
@@ -18,5 +19,6 @@ public class Baked implements ModInitializer {
 
 
 		ModItems.registerBakedItems();
+		ModBlocks.registerBakedModBlocks();
 	}
 }

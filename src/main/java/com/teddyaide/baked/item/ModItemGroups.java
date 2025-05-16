@@ -1,6 +1,7 @@
 package com.teddyaide.baked.item;
 
 import com.teddyaide.baked.Baked;
+import com.teddyaide.baked.block.ModBlocks;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
@@ -20,6 +21,7 @@ public class ModItemGroups {
                         entries.add(ModItems.YEAST_CELLS_VILE);
                         entries.add(ModItems.LARGE_YEAST_CELLS_VILE);
                         entries.add(ModItems.BAKERS_YEAST);
+                        entries.add(ModBlocks.STRAIN_BANK);
                     }).build());
 
 

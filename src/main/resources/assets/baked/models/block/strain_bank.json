@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "baked:block/strain_bank_placeholder"
+  }
+}

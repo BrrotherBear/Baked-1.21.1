@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "baked:block/strain_bank"
+    }
+  }
+}
