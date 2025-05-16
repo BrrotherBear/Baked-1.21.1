@@ -15,7 +15,7 @@ public class ModItems {
     public static final Item YEAST_CELLS_VILE = registerItem("yeast_cells_vile", new Item(new Item.Settings()));
     public static final Item LARGE_YEAST_CELLS_VILE = registerItem("large_yeast_cells_vile", new Item(new Item.Settings()));
     public static final Item STRAW = registerItem("straw", new Item(new Item.Settings()));
-
+    public static final Item BAKERS_YEAST = registerItem("bakers_yeast", new Item(new Item.Settings()));
 
 
 
@@ -32,6 +32,7 @@ public class ModItems {
             fabricItemGroupEntries.add(YEAST_CELLS_VILE);
             fabricItemGroupEntries.add(LARGE_YEAST_CELLS_VILE);
             fabricItemGroupEntries.add(STRAW);
+            fabricItemGroupEntries.add(BAKERS_YEAST);
         });
 
 
