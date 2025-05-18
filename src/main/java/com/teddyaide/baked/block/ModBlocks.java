@@ -1,6 +1,8 @@
 package com.teddyaide.baked.block;
 
 import com.teddyaide.baked.Baked;
+import com.teddyaide.baked.block.custom.CustomTestBlock;
+import com.teddyaide.baked.block.custom.StrainBankBlock;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
@@ -17,14 +19,13 @@ import net.minecraft.util.Identifier;
 public class ModBlocks {
 
     public static final Block STRAIN_BANK = registerBakedBlock("strain_bank",
-            new Block(AbstractBlock.Settings.create()
+            new StrainBankBlock(AbstractBlock.Settings.create().nonOpaque()
                     .mapColor(MapColor.IRON_GRAY)
                     .instrument(NoteBlockInstrument.IRON_XYLOPHONE)
                     .strength(3.0f)
                     .resistance(6.0f)
                     .requiresTool()
                     .sounds(BlockSoundGroup.METAL)));
-
 
 
 

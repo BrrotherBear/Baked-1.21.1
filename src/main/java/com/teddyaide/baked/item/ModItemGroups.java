@@ -21,6 +21,8 @@ public class ModItemGroups {
                         entries.add(ModItems.YEAST_CELLS_VILE);
                         entries.add(ModItems.LARGE_YEAST_CELLS_VILE);
                         entries.add(ModItems.BAKERS_YEAST);
+
+
                         entries.add(ModBlocks.STRAIN_BANK);
                     }).build());
 
