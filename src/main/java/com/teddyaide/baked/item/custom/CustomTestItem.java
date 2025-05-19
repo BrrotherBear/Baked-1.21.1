@@ -19,8 +19,8 @@ import java.util.Map;
 public class CustomTestItem extends Item {
     private static final Map<Block, Block> BAKED_BLOCK_MAP =
             Map.of(
-                    ModBlocks.STRAIN_BANK, Blocks.IRON_BLOCK,
-                    Blocks.IRON_BLOCK, ModBlocks.STRAIN_BANK
+                    ModBlocks.PLACE_HOLDER, Blocks.IRON_BLOCK,
+                    Blocks.IRON_BLOCK, ModBlocks.PLACE_HOLDER
             );
 
     public CustomTestItem(Settings settings) {

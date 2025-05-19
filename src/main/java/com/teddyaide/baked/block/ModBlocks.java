@@ -1,7 +1,6 @@
 package com.teddyaide.baked.block;
 
 import com.teddyaide.baked.Baked;
-import com.teddyaide.baked.block.custom.CustomTestBlock;
 import com.teddyaide.baked.block.custom.StrainBankBlock;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.AbstractBlock;
@@ -18,17 +17,9 @@ import net.minecraft.util.Identifier;
 
 public class ModBlocks {
 
-    public static final Block STRAIN_BANK = registerBakedBlock("strain_bank",
-            new StrainBankBlock(AbstractBlock.Settings.create().nonOpaque()
-                    .mapColor(MapColor.IRON_GRAY)
-                    .instrument(NoteBlockInstrument.IRON_XYLOPHONE)
-                    .strength(3.0f)
-                    .resistance(6.0f)
-                    .requiresTool()
-                    .sounds(BlockSoundGroup.METAL)));
+    public static final Block STRAIN_BANK = registerBakedBlock("strain_bank", new StrainBankBlock(AbstractBlock.Settings.create().nonOpaque()));
 
-
-
+    public static final Block PLACE_HOLDER = registerBakedBlock("place_holder", new Block(AbstractBlock.Settings.create()));
 
     private static Block registerBakedBlock(String name, Block block) {
         registerBakedBlockItem(name, block);
@@ -46,7 +37,8 @@ public class ModBlocks {
         Baked.LOGGER.info("Registering Baked Blocks - " + Baked.MOD_ID);
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(fabricItemGroupEntries -> {
-            fabricItemGroupEntries.add(ModBlocks.STRAIN_BANK);
+            fabricItemGroupEntries.add(STRAIN_BANK);
+            fabricItemGroupEntries.add(PLACE_HOLDER);
         });
     }
 }

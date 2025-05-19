@@ -23,6 +23,7 @@ public class ModItemGroups {
                         entries.add(ModItems.BAKERS_YEAST);
 
 
+                        entries.add(ModBlocks.PLACE_HOLDER);
                         entries.add(ModBlocks.STRAIN_BANK);
                     }).build());
 

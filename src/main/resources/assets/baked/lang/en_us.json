@@ -7,6 +7,8 @@
   "item.baked.bakers_yeast": "Baker's Yeast",
 
   "block.baked.strain_bank": "Strain Bank",
+  "block.baked.place_holder": "Placeholder Block",
+
 
   "itemgroup.baked.baked_items": "Baked Items"
 }
